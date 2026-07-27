@@ -3,6 +3,7 @@ package zio.metrics.connectors.datadog
 import java.time.Duration
 
 import zio.{ULayer, ZLayer}
+import zio.metrics.MetricLabel
 
 /**
  * Datadog Specific configuration
@@ -79,4 +80,6 @@ case class DatadogPublisherConfig(
   maxQueueSize: Int = 100000,
   containerId: Option[String] = None,
   entityId: Option[String] = None,
-  sendUnchanged: Boolean = false)
+  sendUnchanged: Boolean = false,
+  constantTags: List[MetricLabel] = Nil,
+  prefix: Option[String] = None)
