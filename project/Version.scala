@@ -5,7 +5,7 @@ object Version {
 
   val zio     = "2.1.26"
   val zioJson = "0.7.45"
-  val zioHttp = "3.4.0"
+  val zioHttp = "3.4.1"
 
   val micrometer  = "1.17.0"
   val scalaCompat = "2.14.0"
